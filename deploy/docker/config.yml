@@ -3,7 +3,7 @@ app:
   title: "Crawl4AI API"
   version: "1.0.0"
   host: "0.0.0.0"
-  port: 8020
+  port: 8000
   reload: True
   timeout_keep_alive: 300
 
@@ -40,6 +40,7 @@ rate_limiting:
 security:
   enabled: false 
   jwt_enabled: false 
+  access_token: false
   https_redirect: false
   trusted_hosts: ["*"]
   headers:
@@ -59,7 +60,7 @@ crawler:
 
 # Logging Configuration
 logging:
-  level: "INFO"
+  level: "DEBUG"
   format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 # Observability Configuration

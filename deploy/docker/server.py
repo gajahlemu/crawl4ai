@@ -21,7 +21,8 @@ from api import (
     handle_crawl_request,
     stream_results
 )
-from auth import create_access_token, get_token_dependency, TokenRequest  # Import from auth.py
+from auth import create_access_token, TokenRequest  # Import from auth.py
+from auth2 import get_token_dependency  # Import from auth2.py
 
 __version__ = "0.2.6"
 
